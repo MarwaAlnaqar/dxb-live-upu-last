@@ -1,0 +1,19 @@
+body{
+  margin: 0px !important;
+  padding: 0px !important;
+}
+#root {
+  overflow: hidden;
+ font-family: 'Averta', sans-serif;
+  /* max-width: 1920px; */
+   /* max-height: 1790px; */
+  /* margin: 0 auto; */
+  /* padding: 2rem; */
+  text-align: center;
+}
+@font-face {
+  font-family: 'Averta';
+  src: url('../assets/fonts/Averta-EN-Regular.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

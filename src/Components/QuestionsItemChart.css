@@ -1,0 +1,71 @@
+
+
+
+
+
+
+
+.option-chart-list {
+     flex-direction: column;
+      display: flex;
+  flex-wrap: wrap;
+    justify-content: flex-start;
+        align-content: flex-start;
+    align-items: center;
+}
+.option-chart-row {
+  display: flex;
+ 
+  align-items: center;
+  gap: 0px;
+  margin-bottom: 5px;
+}
+.option-box {
+   width: 700px !important;
+  height: 100px !important;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+color: white;
+  border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
+.option-box h3 {
+  font-family: 'Averta-Regular', sans-serif;
+ text-align: center;
+    color: white;
+    font-size: 32px !important;
+
+    font-weight: 400 !important;
+    padding-left: 190px;
+    padding-bottom: 18px;
+}
+
+.option-chart-container {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  flex: 1;
+}
+
+
+.option-chart {
+  flex: 1;
+  height: 120px;
+}
+
+.option-percent {
+  font-size: 32px;
+  font-weight: bold;
+  min-width: 40px;
+  text-align: left;
+   color: #ffffff;
+}

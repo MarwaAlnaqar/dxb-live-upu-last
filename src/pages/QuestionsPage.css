@@ -1,0 +1,210 @@
+
+.questions-container {
+  background-image: url('src/assets/upu/bg-upu.svg'); /* ✅ Use relative web path if image is in public folder */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  max-width:1920px ;
+  height: auto;
+  min-height: 100vh;
+  padding: 2rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.3rem 1rem 0rem 1rem;
+  margin-bottom: 3rem;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+  width: 450px; /* or use responsive units */
+}
+
+.question-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.question-input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+      padding: 10px 40px !important;
+  outline: none;
+  overflow: hidden;
+  font-size: 48px;
+  color: #ffffff;
+  resize: vertical;         /* user can resize vertically */
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+}
+.question-block {
+  width: 100%;
+  min-width: 800px;
+  padding: 1rem;
+  /* background-color: rgba(255, 255, 255, 0.85); */
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ✅ Responsive Adjustments */
+@media (max-width: 768px) {
+  .questions-container {
+    padding: 1rem;
+  }
+
+  .question-block {
+    padding: 1rem;
+  }
+
+  .logo img {
+    width: 180px;
+  }
+}
+@media (max-width: 480px) {
+  .questions-container {
+    padding: 1rem;
+    background-size: cover; /* Ensures background fills on small screens */
+    background-position: top center;
+  }
+
+  .logo {
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .logo img {
+    width: 150px;
+  }
+
+  .question-box {
+    gap: 1.5rem;
+  }
+
+  .question-block {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  .question-block h3 {
+    font-size: 32px;
+     font-family: 'Averta', sans-serif;
+  }
+
+  .option {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+     font-family: 'Averta', sans-serif;
+    text-align: center;
+  }
+
+  .option h3 {
+    font-size: 14px;
+     font-family: 'Averta', sans-serif;
+  }
+
+  .option img,
+  .option-bg {
+    width: 100%;
+    height: auto;
+  }
+}
+/* 
+ */
+ .slider {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+}
+
+.slide {
+  min-width: 100%;
+  scroll-snap-align: center;
+  position: relative;
+}
+
+.slide-content {
+  padding: 40px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+.option-name-input {
+  /* padding-left: 26px !important; */
+  width: 100%;
+  font-size: 20px;
+  /* text-align: center; */
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+}
+.w-100{
+  width:100% !important;
+}
+.percent-input {
+    padding-right: 26px !important;
+  width: 60px;
+  font-size: 20px;
+  text-align: right;
+  border: none;
+  outline: none;
+  background: transparent;
+   color: #ffffff;
+}
+
+.percent-symbol {
+  font-size: 20px;
+  margin-left: 4px;
+}
+
+.option-percent-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+/* Chrome, Safari, Edge, Opera */
+.no-spinner::-webkit-outer-spin-button,
+.no-spinner::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.no-spinner {
+  -moz-appearance: textfield;
+}
+.option-box-private {
+    width: 50% !important;
+    height: 200px !important;
+    display: flex
+;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    border-radius: 8px;
+    background-image: url(src/assets/upu/option_a.svg);
+    background-size: contain;
+    display: flex
+;
+    padding-left: 130px;
+    justify-content: space-evenly;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 400px;
+    margin-right: 30px;
+    padding-right: 70px;
+}
