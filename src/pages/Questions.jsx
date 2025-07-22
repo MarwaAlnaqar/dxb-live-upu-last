@@ -30,10 +30,10 @@ const questions_data = [
     question: "Who painted the Mona Lisa?",
   },
 ];
-const option_a = `${import.meta.env.BASE_URL}public/assets/upu/option_a.svg`;
-const option_b = `${import.meta.env.BASE_URL}public/assets/upu/option_b.svg`;
+const option_a = `${import.meta.env.BASE_URL}/assets/upu/option_a.svg`;
+const option_b = `${import.meta.env.BASE_URL}/assets/upu/option_b.svg`;
 
-const option_c = `${import.meta.env.BASE_URL}public/assets/upu/option_c.svg`;
+const option_c = `${import.meta.env.BASE_URL}/assets/upu/option_c.svg`;
 
 
 
@@ -54,7 +54,7 @@ const option = [
     percent: 10,
   },
 ];
-const logo= `${import.meta.env.BASE_URL}public/assets/upu/logos.svg`;
+const logo= `${import.meta.env.BASE_URL}/assets/upu/logos.svg`;
 const Questions = () => {
 
 

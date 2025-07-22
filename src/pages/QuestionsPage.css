@@ -200,7 +200,7 @@ background-image: url(`${import.meta.env.BASE_URL}assets/upu/bg-upu.svg`); /* âœ
     justify-content: flex-start;
     color: white;
     border-radius: 8px;
-    background-image: url(`${import.meta.env.BASE_URL}public/assets/upu/option_a.svg`);
+    background-image: url(`${import.meta.env.BASE_URL}/assets/upu/option_a.svg`);
     background-size: contain;
     display: flex
 ;

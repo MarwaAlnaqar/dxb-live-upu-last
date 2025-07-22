@@ -39,7 +39,7 @@ const QuestionPrivateAnalytics = () => {
   return (
     <div className="questions-container" style={{ display:'flex',flexDirection:'column',  backgroundImage: `url(${import.meta.env.BASE_URL}assets/upu/bg-upu.svg)` ,justifyContent:'center',alignContent:'center', margin: '0 auto' }}>
           <div className="logo">
-                    <img src={`${import.meta.env.BASE_URL}public/assets/upu/logos.svg`} alt="logo" />
+                    <img src={`${import.meta.env.BASE_URL}/assets/upu/logos.svg`} alt="logo" />
                   </div>
       
                   <div className="question-box">

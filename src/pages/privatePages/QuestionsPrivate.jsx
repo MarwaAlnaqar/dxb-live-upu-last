@@ -75,7 +75,7 @@ const QuestionsPrivate = () => {
  backgroundImage: `url(${import.meta.env.BASE_URL}assets/upu/bg-upu.svg)` 
 }}>
             <div className="logo">
-              <img src={`${import.meta.env.BASE_URL}public/assets/upu/logos.svg`} alt="logo" />
+              <img src={`${import.meta.env.BASE_URL}/assets/upu/logos.svg`} alt="logo" />
             </div>
 
             <div className="question-box">
@@ -98,7 +98,7 @@ const QuestionsPrivate = () => {
                             <div
                               className="option-box"
                               style={{
-                                backgroundImage: `url(${import.meta.env.BASE_URL}public/assets/upu/Group_1199.svg)`,
+                                backgroundImage: `url(${import.meta.env.BASE_URL}/assets/upu/Group_1199.svg)`,
                                 backgroundSize: 'contain',
                                 backgroundRepeat: 'no-repeat',
                                 marginRight:40,
