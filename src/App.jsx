@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+// import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
@@ -22,13 +22,13 @@ import QuestionPrivateAnalytics from'./pages/privatePages/QuestionPrivateAnalyti
 
 function App() {
   return (
-    <Router>
+    <Router basename="/dxb-live-upu-last">
       <Routes>
         <Route path="/" element={<Questions />}  />
         {/* <Route path="/questions" element={<Questions />} /> */}
-        <Route path="/Question-analytics" element={<QuestionAnalytics />} />
-        <Route path="/Question-private" element={<QuestionsPrivate />} />
-        <Route path="/Question-private-analytics" element={<QuestionPrivateAnalytics />} />
+        <Route path="/question-analytics" element={<QuestionAnalytics />} />
+        <Route path="/question-private" element={<QuestionsPrivate />} />
+        <Route path="/question-private-analytics" element={<QuestionPrivateAnalytics />} />
 
 
         

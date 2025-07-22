@@ -11,17 +11,17 @@ const questions_data = [
     option : [
   {
     name: "Yes",
-    box_bg: 'src/assets/upu/option_a.svg', // relative path
+    box_bg: 'public/assets/upu/option_a.svg', // relative path
      percent: 60
   },
   {
     name: "No",
-    box_bg: "src/assets/upu/option_b.svg",
+    box_bg: "public/assets/upu/option_b.svg",
      percent: 30
   },
   {
     name: "Absent",
-    box_bg: "src/assets/upu/option_c.svg",
+    box_bg: "public/assets/upu/option_c.svg",
      percent: 90
   },]
   ,}
@@ -33,7 +33,7 @@ const QuestionAnalytics = () => {
   return (
     <div className="questions-container">
       <div className="logo">
-        <img src="src/assets/upu/logos.svg" alt="logo" />
+        <img src="public/assets/upu/logos.svg" alt="logo" />
       </div>
 
       <div className="question-box">

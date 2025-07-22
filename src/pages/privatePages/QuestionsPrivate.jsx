@@ -73,7 +73,7 @@ const QuestionsPrivate = () => {
     
           <div className="questions-container">
             <div className="logo">
-              <img src="src/assets/upu/logos.svg" alt="logo" />
+              <img src="public/assets/upu/logos.svg" alt="logo" />
             </div>
 
             <div className="question-box">
@@ -96,7 +96,7 @@ const QuestionsPrivate = () => {
                             <div
                               className="option-box"
                               style={{
-                                backgroundImage: `url(src/assets/upu/Group_1199.svg)`,
+                                backgroundImage: `url(public/assets/upu/Group_1199.svg)`,
                                 backgroundSize: 'contain',
                                 backgroundRepeat: 'no-repeat',
                                 marginRight:40,

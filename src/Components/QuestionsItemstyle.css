@@ -6,7 +6,7 @@
     width: 1653px !important;
     height: 339px !important;
     display: flex;
-    background-image: url('src/assets/upu/question-box.svg');
+    background-image: url('public/assets/upu/question-box.svg');
     background-repeat: no-repeat;
     justify-content: center;
     align-items: center;
@@ -61,7 +61,7 @@ text-align: center;
     width: 100% !important;
     height: 339px !important;
     display: flex;
-    background-image: url('src/assets/upu/question_midsize.svg');
+    background-image: url('public/assets/upu/question_midsize.svg');
 
 }
 
