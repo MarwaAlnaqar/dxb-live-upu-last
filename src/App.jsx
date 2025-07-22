@@ -19,12 +19,13 @@ import QuestionPrivateAnalytics from'./pages/privatePages/QuestionPrivateAnalyti
 
 
 
+
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<h1>Home Page</h1>} />
-        <Route path="/questions" element={<Questions />} />
+        <Route path="/" element={<Questions />}  />
+        {/* <Route path="/questions" element={<Questions />} /> */}
         <Route path="/Question-analytics" element={<QuestionAnalytics />} />
         <Route path="/Question-private" element={<QuestionsPrivate />} />
         <Route path="/Question-private-analytics" element={<QuestionPrivateAnalytics />} />

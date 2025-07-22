@@ -1,6 +1,9 @@
+
+
 body{
   margin: 0px !important;
   padding: 0px !important;
+   font-family: 'Averta', sans-serif;
 }
 #root {
   overflow: hidden;
@@ -13,7 +16,7 @@ body{
 }
 @font-face {
   font-family: 'Averta';
-  src: url('../assets/fonts/Averta-EN-Regular.otf') format('truetype');
+  src: url('./assets/fonts/Averta-EN-Regular.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
