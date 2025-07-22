@@ -30,49 +30,37 @@ const questions_data = [
     question: "Who painted the Mona Lisa?",
   },
 ];
+const option_a = `${import.meta.env.BASE_URL}public/assets/upu/option_a.svg`;
+const option_b = `${import.meta.env.BASE_URL}public/assets/upu/option_b.svg`;
+
+const option_c = `${import.meta.env.BASE_URL}public/assets/upu/option_c.svg`;
+
+
 
 const option = [
   {
     name: "Yes",
-    box_bg: 'public/assets/upu/option_a.svg',
+    box_bg: option_a,
     percent: 60,
   },
   {
     name: "No",
-    box_bg: 'public/assets/upu/option_b.svg',
+    box_bg: option_b,
     percent: 30,
   },
   {
     name: "Absent",
-    box_bg: 'public/assets/upu/option_c.svg',
+    box_bg: option_c,
     percent: 10,
   },
 ];
-
+const logo= `${import.meta.env.BASE_URL}public/assets/upu/logos.svg`;
 const Questions = () => {
 
 
 
   
-//    return (
-//  <Swiper
-//       // install Swiper modules
-//       modules={[Navigation, Pagination, Scrollbar, A11y]}
-//       spaceBetween={50}
-//       slidesPerView={3}
-//       navigation
-//       pagination={{ clickable: true }}
-//       scrollbar={{ draggable: true }}
-//       onSwiper={(swiper) => console.log(swiper)}
-//       onSlideChange={() => console.log('slide change')}
-//     >
-//       <SwiperSlide>Slide 1</SwiperSlide>
-//       <SwiperSlide>Slide 2</SwiperSlide>
-//       <SwiperSlide>Slide 3</SwiperSlide>
-//       <SwiperSlide>Slide 4</SwiperSlide>
-//       ...
-//     </Swiper>
-//   );
+
 
   return (
 <Swiper
@@ -87,9 +75,11 @@ const Questions = () => {
      
       {questions_data.map((item, index) => (
         <SwiperSlide key={index}>
-          <div className="questions-container">
+          <div className="questions-container"style={{ 
+ backgroundImage: `url(${import.meta.env.BASE_URL}assets/upu/bg-upu.svg)` 
+}}>
             <div className="logo">
-              <img src="public/assets/upu/logos.svg" alt="logo" />
+              <img src={logo} alt="logo" />
             </div>
 
             <div className="question-box">
