@@ -4,6 +4,10 @@ import './QuestionsPage.css';
 import QuestionItem from '../Components/QuestionItem';
 import QuestionOptionChart from '../Components/QuestionOptionChart'; // ✅ Import added
 
+const option_a = `${import.meta.env.BASE_URL}/assets/upu/option_a.svg`;
+const option_b = `${import.meta.env.BASE_URL}/assets/upu/option_b.svg`;
+
+const option_c = `${import.meta.env.BASE_URL}/assets/upu/option_c.svg`;
 // ✅ Questions list (all will share the same options)
 const questions_data = [
   {
@@ -11,21 +15,24 @@ const questions_data = [
     option : [
   {
     name: "Yes",
-    box_bg: 'public/assets/upu/option_a.svg', // relative path
+     box_bg: option_a,// relative path
      percent: 60
   },
   {
     name: "No",
-    box_bg: "public/assets/upu/option_b.svg",
+     box_bg: option_b,
      percent: 30
   },
   {
     name: "Absent",
-    box_bg: "public/assets/upu/option_c.svg",
+      box_bg: option_c,
      percent: 90
   },]
   ,}
 ];
+
+
+
 
 
 
@@ -35,7 +42,7 @@ const QuestionAnalytics = () => {
  backgroundImage: `url(${import.meta.env.BASE_URL}assets/upu/bg-upu.svg)` 
 }}>
       <div className="logo">
-        <img src="public/assets/upu/logos.svg" alt="logo" />
+          <img src={`${import.meta.env.BASE_URL}/assets/upu/logos.svg`} alt="logo" />
       </div>
 
       <div className="question-box">

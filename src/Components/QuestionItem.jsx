@@ -7,7 +7,9 @@ export default function QuestionItem({ question  }) {
    
       <div className="question-list">
         {/* {questions.map((item, index) => ( */}
-          <div  className="question">
+          <div  className="question" style={{ 
+ backgroundImage: `url(${import.meta.env.BASE_URL}assets/upu/question-box.svg)` 
+}}>
             <h3>{question}</h3>
             {/* <p>{item.answer}</p> */}
           </div>

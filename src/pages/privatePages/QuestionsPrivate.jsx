@@ -83,7 +83,9 @@ const QuestionsPrivate = () => {
           
                 <div className="question-list">
    
-                   <div  className="question">
+                   <div  className="question"style={{ 
+ backgroundImage: `url(${import.meta.env.BASE_URL}assets/upu/question-box.svg)` 
+}}>
                       <textarea rows={3}
                         className="question-input"
                         placeholder="please enter your question"

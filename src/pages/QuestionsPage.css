@@ -13,6 +13,18 @@ background-image: url(`${import.meta.env.BASE_URL}assets/upu/bg-upu.svg`); /* âœ
   margin: 0 auto;
   box-sizing: border-box;
 }
+.counry-logo{
+    display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1.3rem 1rem 0rem 1rem;
+
+}
+.counry-logo img {
+  max-width: 100%;
+  height: auto;
+  width: 250px; /* or use responsive units */
+}
 
 .logo {
   display: flex;
@@ -211,4 +223,20 @@ background-image: url(`${import.meta.env.BASE_URL}assets/upu/bg-upu.svg`); /* âœ
     width: 400px;
     margin-right: 30px;
     padding-right: 70px;
+}
+.country-container{
+
+.swiper {
+  display: flex;
+  flex-direction: column;
+}
+
+.swiper-pagination {
+
+    position: initial !important;
+  /* margin-top: 16px; */
+  order: 1; /* Ensure pagination is after slide content */
+  text-align: center;
+}
+
 }
