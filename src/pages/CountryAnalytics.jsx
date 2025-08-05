@@ -98,6 +98,7 @@ const CountryAnalytics = () => {
       className="questions-container country-container"
       style={{
         backgroundImage: `url(${import.meta.env.BASE_URL}assets/upu/banner3.svg)`,
+        
       }}
     >
       {loading ? (

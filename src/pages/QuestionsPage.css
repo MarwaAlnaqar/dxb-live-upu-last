@@ -240,3 +240,6 @@ background-image: url(`${import.meta.env.BASE_URL}assets/upu/bg-upu.svg`); /* âœ
 }
 
 }
+.country-container{
+  padding:1.5rem !important;
+}
