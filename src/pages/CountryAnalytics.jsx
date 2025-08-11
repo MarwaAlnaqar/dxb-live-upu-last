@@ -97,7 +97,7 @@ const CountryAnalytics = () => {
     <div
       className="questions-container country-container"
       style={{
-        backgroundImage: `url(${import.meta.env.BASE_URL}assets/upu/banner4.svg)`,
+        backgroundImage: `url(${import.meta.env.BASE_URL}assets/upu/banner4.svg)`
         
       }}
     >

@@ -39,9 +39,9 @@ const questions_data = [
 const QuestionAnalytics = () => {
   return (
     <div className="questions-container" style={{ 
- backgroundImage: `url(${import.meta.env.BASE_URL}assets/upu/bg-upu.svg)` 
+ backgroundImage: `url(${import.meta.env.BASE_URL}assets/upu/bg-upu.svg)` ,padding:4
 }}>
-      <div className="logo">
+      <div className="logo" style={{marginBottom:4,paddingTop:6}}>
           <img src={`${import.meta.env.BASE_URL}/assets/upu/logos.svg`} alt="logo" />
       </div>
 
