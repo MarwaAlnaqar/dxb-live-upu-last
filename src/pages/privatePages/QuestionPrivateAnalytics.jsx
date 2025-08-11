@@ -1,5 +1,5 @@
 import React from 'react';
-import { PolarArea } from 'react-chartjs-2';
+import { Doughnut } from 'react-chartjs-2';
 import {
   Chart as ChartJS,
   RadialLinearScale,
@@ -26,16 +26,25 @@ const QuestionPrivateAnalytics = () => {
       },
     ],
   };
-
-  const options = {
-    responsive: true,
-    plugins: {
-      legend: {
-        position: 'right',
-      },
+const options = {
+  cutout: '60%', // controls thickness of donut ring (default: '50%')
+  plugins: {
+    legend: {
+      position: 'right', // or 'top', 'bottom'
     },
-  };
-
+  },
+  responsive: true,
+  maintainAspectRatio: false,
+};
+  // const options = {
+  //   responsive: true,
+  //   plugins: {
+  //     legend: {
+  //       position: 'right',
+  //     },
+  //   },
+  // };
+ 
   return (
     <div className="questions-container" style={{ display:'flex',flexDirection:'column',  backgroundImage: `url(${import.meta.env.BASE_URL}assets/upu/bg-upu.svg)` ,justifyContent:'center',alignContent:'center', margin: '0 auto' }}>
           <div className="logo">
@@ -47,7 +56,7 @@ const QuestionPrivateAnalytics = () => {
                 
                        <div className="question-list">
          
-                <div  className="question">
+                <div  className="question-analytic-private">
        
             <h3>Which landmark holds the Guinness World Record for the tallest building in the world? </h3>
        
@@ -62,7 +71,9 @@ const QuestionPrivateAnalytics = () => {
                   </div>
                 
       <div style={{maxWidth:700}}>
-     <PolarArea data={data} options={options} width={400} height={400} />
+     {/* <PolarArea data={data} options={options} width={400} height={400} />
+      */}
+        <Doughnut data={data} options={options} width={400} height={400} />
       </div>
  
     </div>

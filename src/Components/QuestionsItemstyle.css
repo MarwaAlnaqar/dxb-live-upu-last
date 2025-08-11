@@ -16,7 +16,7 @@
     font-size: 48px;
      font-family: 'Averta', sans-serif;
     text-align: center;
-    margin-bottom: 32px;
+    /* margin-bottom: 32px; */
     color: #ffffff;
     align-content: center;
     flex-wrap: nowrap;
@@ -24,8 +24,44 @@
 .question h3{
       padding: 0px 96px !important;
 }
-
-
+.question-analytic-private{
+    width: 1653px !important;
+    height: 139px !important;
+    display: flex;
+    /* background-image: url('assets/upu/question-box.svg'); */
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    /* border: white 1px solid; */
+    padding: 19px 10px !important;
+    font-size: 48px;
+     font-family: 'Averta', sans-serif;
+    text-align: center;
+    /* margin-bottom: 32px; */
+    color: #ffffff;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+.question-analytic-private-V2{
+    width: 750px !important;
+    /* height: 139px !important; */
+    display: flex;
+    /* background-image: url('assets/upu/question-box.svg'); */
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    /* border: white 1px solid; */
+    padding: 19px 10px !important;
+    font-size: 48px;
+     font-family: 'Averta', sans-serif;
+    text-align: center;
+    /* margin-bottom: 32px; */
+    color: #ffffff;
+    align-content: center;
+    flex-wrap: nowrap;
+}
 /* question-option */
 .question-list{
   display: flex;
@@ -35,12 +71,15 @@
 }
 .option{
  
-   height: 180px !important;
+   /* height: 180px !important; */
+   height: 120px !important;
+
    display: flex;
     justify-content: flex-start;
     align-items: center;
     width: 748px !important;
-    margin: 15px 30px;
+  margin: 15px 30px;
+    
 }
 .option:last-child{
     margin: 0px ;
@@ -52,7 +91,8 @@ text-align: center;
     font-size: 32px !important;
      font-family: 'Averta', sans-serif;
     font-weight: 400 !important;
-    padding-left: 129px;
+    /* padding-left: 129px; */
+    padding-left: 24%;
     padding-bottom: 18px;
 }
 /*  */
