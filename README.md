@@ -10,3 +10,11 @@ Currently, two official plugins are available:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+the live link 
+
+http://localhost:5173/dxb-live-upu-last/
+http://localhost:5173/dxb-live-upu-last/#/question-analytics
+http://localhost:5173/dxb-live-upu-last/#/country-analytics
+http://localhost:5173/dxb-live-upu-last/#/question-private-analytics-V2
