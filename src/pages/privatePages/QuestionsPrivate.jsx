@@ -98,7 +98,7 @@ const QuestionsPrivate = () => {
                 {/* chart */}
                   <div  className="option-chart-row" style={{ marginLeft:80,marginRight:80 }}>
                             <div
-                              className="option-box"
+                              className="option-box w-700"
                               style={{
                                 backgroundImage: `url(${import.meta.env.BASE_URL}/assets/upu/Group_1199.svg)`,
                                 backgroundSize: 'contain',

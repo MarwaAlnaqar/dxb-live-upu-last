@@ -1,12 +1,11 @@
 
 .questions-container {
-background-image: url(`${import.meta.env.BASE_URL}assets/upu/bg-upu.svg`); /* âœ… Use relative web path if image is in public folder */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
 
-  max-width:1920px ;
+  /* max-width:1920px ; */
   height: auto;
   min-height: 100vh;
   padding: 2rem;
@@ -23,9 +22,16 @@ background-image: url(`${import.meta.env.BASE_URL}assets/upu/bg-upu.svg`); /* âœ
 .counry-logo img {
   max-width: 100%;
   height: auto;
-  width: 250px; /* or use responsive units */
+  width: 250px; 
 }
-
+.flex-class{
+  display: flex;
+}
+.flex-center{
+   display: flex;
+   justify-content: center;
+  align-items: center;
+}
 .logo {
   display: flex;
   justify-content: center;
@@ -37,7 +43,7 @@ background-image: url(`${import.meta.env.BASE_URL}assets/upu/bg-upu.svg`); /* âœ
 .logo img {
   max-width: 100%;
   height: auto;
-  width: 450px; /* or use responsive units */
+  width: 450px; 
 }
 
 .question-box {
@@ -54,9 +60,9 @@ background-image: url(`${import.meta.env.BASE_URL}assets/upu/bg-upu.svg`); /* âœ
   outline: none;
   overflow: hidden;
   font-size: 48px;
-   font-family: 'Averta', sans-serif;
+   font-family: 'Averta-Light', sans-serif;
   color: #ffffff;
-  resize: vertical;         /* user can resize vertically */
+  resize: vertical;        
   box-sizing: border-box;
   overflow-wrap: break-word;
   white-space: pre-wrap;
@@ -65,12 +71,12 @@ background-image: url(`${import.meta.env.BASE_URL}assets/upu/bg-upu.svg`); /* âœ
   width: 100%;
   min-width: 800px;
   padding: 1rem;
-  /* background-color: rgba(255, 255, 255, 0.85); */
+
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
-/* âœ… Responsive Adjustments */
+
 @media (max-width: 768px) {
   .questions-container {
     padding: 1rem;
@@ -87,7 +93,7 @@ background-image: url(`${import.meta.env.BASE_URL}assets/upu/bg-upu.svg`); /* âœ
 @media (max-width: 480px) {
   .questions-container {
     padding: 1rem;
-    background-size: cover; /* Ensures background fills on small screens */
+    background-size: cover; 
     background-position: top center;
   }
 
@@ -112,7 +118,7 @@ background-image: url(`${import.meta.env.BASE_URL}assets/upu/bg-upu.svg`); /* âœ
 
   .question-block h3 {
     font-size: 32px;
-     font-family: 'Averta', sans-serif;
+     font-family: 'Averta-Light', sans-serif;
   }
 
   .option {
@@ -120,13 +126,13 @@ background-image: url(`${import.meta.env.BASE_URL}assets/upu/bg-upu.svg`); /* âœ
     padding: 10px;
     
     font-size: 14px;
-     font-family: 'Averta', sans-serif;
+     font-family: 'Averta-Light', sans-serif;
     text-align: center;
   }
 
   .option h3 {
     font-size: 14px;
-     font-family: 'Averta', sans-serif;
+     font-family: 'Averta-Light', sans-serif;
   }
 
   .option img,
@@ -135,8 +141,7 @@ background-image: url(`${import.meta.env.BASE_URL}assets/upu/bg-upu.svg`); /* âœ
     height: auto;
   }
 }
-/* 
- */
+
  .slider {
   width: 100%;
   overflow: hidden;
@@ -161,7 +166,7 @@ background-image: url(`${import.meta.env.BASE_URL}assets/upu/bg-upu.svg`); /* âœ
 
   width: 100%;
   font-size: 20px;
- font-family: 'Averta', sans-serif;
+ font-family: 'Averta-Light', sans-serif;
   background: transparent;
   border: none;
   outline: none;
@@ -174,7 +179,7 @@ background-image: url(`${import.meta.env.BASE_URL}assets/upu/bg-upu.svg`); /* âœ
     padding-right: 26px !important;
   width: 60px;
   font-size: 20px;
-   font-family: 'Averta', sans-serif;
+   font-family: 'Averta-Light', sans-serif;
   text-align: right;
   border: none;
   outline: none;
@@ -184,7 +189,7 @@ background-image: url(`${import.meta.env.BASE_URL}assets/upu/bg-upu.svg`); /* âœ
 
 .percent-symbol {
   font-size: 20px;
-   font-family: 'Averta', sans-serif;
+   font-family: 'Averta-Light', sans-serif;
   margin-left: 4px;
 }
 
@@ -193,14 +198,14 @@ background-image: url(`${import.meta.env.BASE_URL}assets/upu/bg-upu.svg`); /* âœ
   align-items: center;
   gap: 10px;
 }
-/* Chrome, Safari, Edge, Opera */
+
 .no-spinner::-webkit-outer-spin-button,
 .no-spinner::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-/* Firefox */
+
 .no-spinner {
   -moz-appearance: textfield;
 }
@@ -235,12 +240,16 @@ background-image: url(`${import.meta.env.BASE_URL}assets/upu/bg-upu.svg`); /* âœ
 .swiper-pagination {
 
     position: initial !important;
-  /* margin-top: 16px; */
-  order: 1; /* Ensure pagination is after slide content */
+
+  order: 1; 
   text-align: center;
 }
 
 }
 .country-container{
-  padding:1.5rem !important;
+  /* padding:1.5rem !important; */
 }
+
+
+
+

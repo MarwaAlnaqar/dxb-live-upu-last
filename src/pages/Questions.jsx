@@ -49,7 +49,7 @@ const option = [
     percent: 30,
   },
   {
-    name: "Absent",
+    name: "Abstain",
     box_bg: option_c,
     percent: 10,
   },

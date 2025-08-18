@@ -17,6 +17,8 @@ import QuestionAnalytics from'./pages/QuestionAnalytics';
 import QuestionsPrivate from'./pages/privatePages/QuestionsPrivate';
 import QuestionPrivateAnalytics from'./pages/privatePages/QuestionPrivateAnalytics';
 import QuestionPrivateAnalyticsV2 from'./pages/privatePages/QuestionPrivateAnalyticsV2';
+import QuestionAnalyticsUpdated from'./pages/QuestionAnalyticsUpdated';
+import QuestionAnalyticsUpdated2 from'./pages/QuestionAnalyticsUpdated2';
 
 
 import CountryAnalytics from './pages/CountryAnalytics';
@@ -30,6 +32,10 @@ function App() {
         <Route path="/" element={<Questions />}  />
         <Route path="/country-analytics" element={<CountryAnalytics />} />
         <Route path="/question-analytics" element={<QuestionAnalytics />} />
+        <Route path="/question-analytics-v2" element={<QuestionAnalyticsUpdated />} />
+        <Route path="/question-analytics-v3" element={<QuestionAnalyticsUpdated2 />} />
+
+
         <Route path="/question-private" element={<QuestionsPrivate />} />
         <Route path="/question-private-analytics" element={<QuestionPrivateAnalytics />} />
         <Route path="/question-private-analytics-V2" element={<QuestionPrivateAnalyticsV2 />} />

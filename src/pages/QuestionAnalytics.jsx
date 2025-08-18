@@ -24,7 +24,7 @@ const questions_data = [
      percent: 30
   },
   {
-    name: "Absent",
+    name: "Abstain",
       box_bg: option_c,
      percent: 90
   },]
@@ -37,19 +37,21 @@ const questions_data = [
 
 
 const QuestionAnalytics = () => {
+
   return (
     <div className="questions-container" style={{ 
- backgroundImage: `url(${import.meta.env.BASE_URL}assets/upu/bg-upu.svg)` ,padding:4
+ backgroundImage: `url(${import.meta.env.BASE_URL}assets/upu/bg-upu.svg)` ,padding:4,maxWidth:'none'
 }}>
-      <div className="logo" style={{marginBottom:4,paddingTop:6}}>
+      <div className="logo" >
           <img src={`${import.meta.env.BASE_URL}/assets/upu/logos.svg`} alt="logo" />
       </div>
 
       <div className="question-box">
+         {/* <CountryOptions options={countriesChunk} offset={index * CHUNK_SIZE} /> */}
         {questions_data.map((item, index) => (
           <div key={index} className="question-block">
 
-            <QuestionItem question={item.question} />
+            {/* <QuestionItem question={item.question} /> */}
             <QuestionOptionChart options={item.option} />
           </div>
         ))}

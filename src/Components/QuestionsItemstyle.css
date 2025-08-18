@@ -14,7 +14,7 @@
     /* border: white 1px solid; */
     padding: 19px 10px !important;
     font-size: 48px;
-     font-family: 'Averta', sans-serif;
+     font-family: 'Averta-Light', sans-serif;
     text-align: center;
     /* margin-bottom: 32px; */
     color: #ffffff;
@@ -36,7 +36,7 @@
     /* border: white 1px solid; */
     padding: 19px 10px !important;
     font-size: 48px;
-     font-family: 'Averta', sans-serif;
+     font-family: 'Averta-Light', sans-serif;
     text-align: center;
     /* margin-bottom: 32px; */
     color: #ffffff;
@@ -55,7 +55,7 @@
     /* border: white 1px solid; */
     padding: 19px 10px !important;
     font-size: 48px;
-     font-family: 'Averta', sans-serif;
+     font-family: 'Averta-Light', sans-serif;
     text-align: center;
     /* margin-bottom: 32px; */
     color: #ffffff;
@@ -89,7 +89,7 @@
 text-align: center;
     color: white;
     font-size: 32px !important;
-     font-family: 'Averta', sans-serif;
+     font-family: 'Averta-Light', sans-serif;
     font-weight: 400 !important;
     /* padding-left: 129px; */
     padding-left: 24%;
@@ -124,7 +124,9 @@ text-align: center;
   display: flex;
   align-items: center;
 }
-
+.w-500{
+  width: 500px !important;
+}
 .country-index {
   margin-right: 8px;
   font-weight: bold;
@@ -152,8 +154,9 @@ text-align: center;
     text-align: start;
   padding: 5px 6px;
   border: 1px solid #ddd;
-  font-size: 16px;
+  font-size: 1rem;
   vertical-align: top;
+letter-spacing: 1px;
 }
 
 .country-index {
@@ -161,7 +164,7 @@ text-align: center;
     width: 20px;
     display: inline-block;
 
-       font-family: 'Averta', sans-serif;
+       font-family: 'Averta-Light', sans-serif;
   font-weight: bold;
   margin-right: 6px;
 }

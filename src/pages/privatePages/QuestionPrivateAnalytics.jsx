@@ -12,7 +12,7 @@ ChartJS.register(RadialLinearScale, ArcElement, Tooltip, Legend);
 
 const QuestionPrivateAnalytics = () => {
   const data = {
-    labels: ['Yes', 'No', 'Absent'],
+    labels: ['Yes', 'No', 'Abstain'],
     datasets: [
       {
         label: 'Responses',
@@ -20,7 +20,7 @@ const QuestionPrivateAnalytics = () => {
         backgroundColor: [
           '#A3DDFF',   // Yes
           '#036FAF',   // No
-          '#475E6B',   // Absent
+          '#475E6B',   // Abstain
         ],
         borderWidth: 1,
       },

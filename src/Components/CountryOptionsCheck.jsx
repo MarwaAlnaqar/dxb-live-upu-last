@@ -1,15 +1,14 @@
 import React from 'react';
 import './QuestionsItemstyle.css';
 
-export default function CountryOptions({ options = [],isSliced=true, offset = 0,numberOfCol=3 }) {
+export default function CountryOptions({ options = [],isSliced=true, offset = 0,numberOfCol=3,isSlider=false }) {
   console.log(options.length)
   console.log(isSliced)
 
   const countries = isSliced ? options.slice(0, 100):options.slice(50, 290); // Keep this if you want max 100 per call, or remove if already sliced
     // console.log(countries)
   const colors = [        '#22ad22',   // Yes
-          'red',   // No
-          'yellow',   // Abstain
+        
           "#ffff", "#ffff"]; // light red, light green, light yellow
 
   const getRandomColor = () => {
@@ -23,8 +22,8 @@ export default function CountryOptions({ options = [],isSliced=true, offset = 0,
   };
   // Group countries into rows of 3
   const rows = [];
-  for (let i = 0; i < countries.length; i += numberOfCol) {
-    rows.push(countries.slice(i, i + numberOfCol));
+  for (let i = 0; i < countries.length; i += 5) {
+    rows.push(countries.slice(i, i + 5));
   }
 
   return (
@@ -34,16 +33,18 @@ export default function CountryOptions({ options = [],isSliced=true, offset = 0,
           <tr key={rowIndex}>
             {row.map((country, colIndex) => {
               // Calculate continuous index:
-              const index = offset + rowIndex * 3 + colIndex + 1;
+              const index = offset + rowIndex * 5 + colIndex + 1;
+            
               return (
+                
                 <td  style={{ backgroundColor: getRandomColor() }} key={colIndex}>
                   {/* <span className="country-index">{index}.</span>  */}
                   {country}
                 </td>
               );
             })}
-            {row.length < 3 &&
-              Array.from({ length: 3 - row.length }).map((_, i) => (
+            {row.length < 4 &&
+              Array.from({ length: 5 - row.length }).map((_, i) => (
                 <td   key={`empty-${i}`} />
               ))}
           </tr>
