@@ -13,12 +13,12 @@ import 'swiper/css/pagination';
 
 import { Navigation, Pagination } from 'swiper/modules';
 
-const CHUNK_SIZE = 100;
+const CHUNK_SIZE = 126;
 const option_a = `${import.meta.env.BASE_URL}/assets/upu/option_a.svg`;
 const option_b = `${import.meta.env.BASE_URL}/assets/upu/option_b.svg`;
 
 const option_c = `${import.meta.env.BASE_URL}/assets/upu/option_c.svg`;
-const CountryAnalyticsV2 = () => {
+const CountryAnalytics = () => {
   const [slides, setSlides] = useState([]);
   const [loading, setLoading] = useState(true);
   const option= [
@@ -57,12 +57,12 @@ const CountryAnalyticsV2 = () => {
     <div
       className="questions-container country-container"
       style={{
-        backgroundImage: `url(${import.meta.env.BASE_URL}assets/upu/bg-upu.svg)`
+        backgroundImage: `url(${import.meta.env.BASE_URL}assets/upu/banner4.svg)`,padding: '1.2rem'
         
       }}
     >
        <div className="logo" >
-          <img src={`${import.meta.env.BASE_URL}/assets/upu/logos.svg`} alt="logo" />
+          <img src={`${import.meta.env.BASE_URL}/assets/upu/colored-logo.svg`} alt="logo" />
       </div>
       {loading ? (
         <p>Loading...</p>
@@ -85,22 +85,33 @@ const CountryAnalyticsV2 = () => {
         </Swiper>
       )}
 
-        <div
+      <div
         className="counry-logo"
         style={loading ? { position: 'absolute', bottom: 0 } : {}}
       >
-     
-        <div className='option-check-box'
-        
-        >
-          <OptionBox label="Present" isWhite={true} count={60} />
-          {/* <OptionBox label="Not Present"isWhite={true} count={60} /> */}
-        </div>
-      
+        {/* <img src={`${import.meta.env.BASE_URL}/assets/upu/colored-logo.svg`} alt="logo" /> */}
+    <div
+      style={{
+        display: "flex",
+        width: "80%",
+        justifyContent: "space-around",
+        margin: "20px auto",
+        letterSpacing:1,
+        gap: "20px", // spacing between boxes
+      }}
+    >
+      <OptionBox label="Present" count={60} />
+      {/* <OptionBox label="Not Present" count={60} /> */}
+    </div>
+        {/* <img src={`${import.meta.env.BASE_URL}/assets/upu/colored-logo.svg`} alt="logo" />
+
+        <img src={`${import.meta.env.BASE_URL}/assets/upu/colored-logo.svg`} alt="logo" /> */}
+
+             {/* <QuestionOptionChart options={option} customeOption={true} /> */}
       </div>
     </div>
   );
 };
 
-export default CountryAnalyticsV2;
+export default CountryAnalytics;
 

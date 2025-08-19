@@ -52,7 +52,7 @@ const questions_data = [
 
 
 
-const QuestionAnalyticsUpdated2 = () => {
+const QuestionAnalyticsUpdated3 = () => {
     const [slides, setSlides] = useState([]);
     const [loading, setLoading] = useState(true);
   
@@ -107,7 +107,7 @@ const QuestionAnalyticsUpdated2 = () => {
       <div className="question-box">
         {questions_data.map((item, index) => (
           <div key={index} className="question-block" >
- <Swiper
+ {/* <Swiper
    
             modules={[Pagination]}
   spaceBetween={50}
@@ -117,11 +117,25 @@ const QuestionAnalyticsUpdated2 = () => {
   onSwiper={(swiper) => console.log(swiper)}
   onSlideChange={() => console.log('slide change')}
         >
-                <SwiperSlide key={index}>
+                <SwiperSlide key={index}> */}
    <CountryOptions options={slides} isSliced={false} numberOfCol={9}  />
-    
-                </SwiperSlide>
-                  <SwiperSlide key={index}>
+    <div
+           className="counry-logo"
+           style={loading ? { position: 'absolute', bottom: 0 } : {}}
+         >
+        
+           <div className='option-check-box'
+           
+           >
+             <OptionBox label="Yes" isWhite={true} count={60} />
+             <OptionBox label="No"isWhite={true} count={60} />
+             <OptionBox label="Abstain"isWhite={true} count={60} />
+
+           </div>
+         
+         </div>
+                {/* </SwiperSlide> */}
+                  {/* <SwiperSlide key={index}>
                         
                     <div className='question-option-chart-container'>
                         
@@ -130,7 +144,7 @@ const QuestionAnalyticsUpdated2 = () => {
                     
                 </SwiperSlide>
 
-        </Swiper>
+        </Swiper> */}
          
           
           </div>
@@ -140,4 +154,4 @@ const QuestionAnalyticsUpdated2 = () => {
   );
 };
 
-export default QuestionAnalyticsUpdated2;
+export default QuestionAnalyticsUpdated3;
