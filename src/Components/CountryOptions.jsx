@@ -4,8 +4,10 @@ import './QuestionsItemstyle.css';
 export default function CountryOptions({ options = [],isSliced=true, offset = 0,numberOfCol=3 }) {
   console.log(options.length)
   console.log(isSliced)
+const countries =options.slice(0,198);
+  console.log(countries.length)
 
-  const countries = isSliced ? options.slice(0, 100):options.slice(50, 290); // Keep this if you want max 100 per call, or remove if already sliced
+  // const countries = isSliced ? options.slice(0, 100):options.slice(50, 290); // Keep this if you want max 100 per call, or remove if already sliced
     // console.log(countries)
   const colors = [        '#22ad22',   // Yes
           'red',   // No

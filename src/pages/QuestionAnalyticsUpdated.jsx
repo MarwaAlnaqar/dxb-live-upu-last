@@ -91,7 +91,7 @@ const QuestionAnalyticsUpdated = () => {
         }, []);
   return (
     <div className="questions-container" style={{ 
- backgroundImage: `url(${import.meta.env.BASE_URL}assets/upu/bg-upu.svg)` ,maxWidth:'none'
+ backgroundImage: `url(${import.meta.env.BASE_URL}assets/upu/bg-upu.svg)` 
 }}>
       <div className="logo" >
           <img src={`${import.meta.env.BASE_URL}/assets/upu/logos.svg`} alt="logo" />

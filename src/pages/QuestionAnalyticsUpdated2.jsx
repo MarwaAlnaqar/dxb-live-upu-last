@@ -61,10 +61,7 @@ const QuestionAnalyticsUpdated2 = () => {
         try {
           const result = await fetchAllCountries();
   
-          // const chunks = [];
-          // for (let i = 0; i < result.length; i += CHUNK_SIZE) {
-          //   chunks.push(result.slice(i, i + CHUNK_SIZE));
-          // }
+       
           setSlides(result);
         } catch (error) {
           console.error('Failed to load countries:', error);
@@ -81,10 +78,9 @@ const QuestionAnalyticsUpdated2 = () => {
         useEffect(() => {
           const loadVotes = async () => {
             try {
-              // const result = await fetchAllVotes();
+         
       const result=await getElectionList();
-      console.log('result')
-      console.log(result)
+  
       
               const chunks = [];
               for (let i = 0; i < result.length; i += CHUNK_SIZE) {
@@ -102,7 +98,7 @@ const QuestionAnalyticsUpdated2 = () => {
         }, []);
   return (
     <div className="questions-container country-container" style={{ 
- backgroundImage: `url(${import.meta.env.BASE_URL}assets/upu/bg-upu.svg)` ,maxWidth:'none',padding: '0.5rem'
+ backgroundImage: `url(${import.meta.env.BASE_URL}assets/upu/bg-upu.svg)` 
 }}>
       <div className="logo" >
           <img src={`${import.meta.env.BASE_URL}/assets/upu/logos.svg`} alt="logo" />
@@ -110,7 +106,7 @@ const QuestionAnalyticsUpdated2 = () => {
 
       <div className="question-box">
         {questions_data.map((item, index) => (
-          <div key={index} className="question-block" style={{paddingTop:0}}>
+          <div key={index} className="question-block" >
  <Swiper
    
             modules={[Pagination]}
@@ -122,16 +118,11 @@ const QuestionAnalyticsUpdated2 = () => {
   onSlideChange={() => console.log('slide change')}
         >
                 <SwiperSlide key={index}>
-   <CountryOptions options={slides} isSliced={false} numberOfCol={8}  />
+   <CountryOptions options={slides} isSliced={false} numberOfCol={9}  />
                 </SwiperSlide>
                   <SwiperSlide key={index}>
-                          {/* <div className="flex-center" style={{paddingTop:15}} >
-          <img src={`${import.meta.env.BASE_URL}/assets/upu/logos.svg`}  alt="logo" />
-      </div> */}
-                    <div style={{
-                        display:'flex',
-    justifyContent: 'center',padding:12,height: '60vh'
-                    }}>
+                        
+                    <div className='question-option-chart-container'>
                         
   <QuestionOptionChart options={item.option} customeOption={true} />
                     </div>

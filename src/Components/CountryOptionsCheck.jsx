@@ -1,54 +1,57 @@
 import React from 'react';
 import './QuestionsItemstyle.css';
 
-export default function CountryOptions({ options = [],isSliced=true, offset = 0,numberOfCol=3,isSlider=false }) {
-  console.log(options.length)
-  console.log(isSliced)
+export default function CountryOptions({
+  options = [],
+  isSliced = true,
+  offset = 0,
+  numberOfCol = 6,
+  isSlider = false
+}) {
 
-  const countries = isSliced ? options.slice(0, 100):options.slice(50, 290); // Keep this if you want max 100 per call, or remove if already sliced
-    // console.log(countries)
-  const colors = [        '#22ad22',   // Yes
-        
-          "#ffff", "#ffff"]; // light red, light green, light yellow
+
+  // ✅ Step 1: sort alphabetically
+  let countries = [...options].sort((a, b) => a.localeCompare(b));
+
+
+   countries =  countries.slice(0, 200);
+
+
+  const colors = ["#22ad22", "#ffff", "#ffff"];
 
   const getRandomColor = () => {
-  
-  const index = Math.floor(Math.random() * colors.length); // 0, 1, or 2
-  // console.log(index)
-  // console.log(colors[index])
-
-  return colors[index];
-    // return colors[Math.floor(Math.random() * colors.length)];
+    const index = Math.floor(Math.random() * colors.length);
+    return colors[index];
   };
-  // Group countries into rows of 3
-  const rows = [];
-  for (let i = 0; i < countries.length; i += 5) {
-    rows.push(countries.slice(i, i + 5));
-  }
+
+  // ✅ Step 3: Split into columns instead of rows
+  const numRows = Math.ceil(countries.length / numberOfCol);
+
+  // Create a matrix [rows][columns], filling column by column
+  const rows = Array.from({ length: numRows }, (_, rowIndex) =>
+    Array.from({ length: numberOfCol }, (_, colIndex) => {
+      const index = colIndex * numRows + rowIndex; // column-major order
+      return countries[index] || "";
+    })
+  );
 
   return (
     <table className="country-table">
       <tbody>
-        {rows.map((row, rowIndex) => (
-          <tr key={rowIndex}>
-            {row.map((country, colIndex) => {
-              // Calculate continuous index:
-              const index = offset + rowIndex * 5 + colIndex + 1;
-            
-              return (
-                
-                <td  style={{ backgroundColor: getRandomColor() }} key={colIndex}>
-                  {/* <span className="country-index">{index}.</span>  */}
-                  {country}
-                </td>
-              );
-            })}
-            {row.length < 4 &&
-              Array.from({ length: 5 - row.length }).map((_, i) => (
-                <td   key={`empty-${i}`} />
-              ))}
-          </tr>
-        ))}
+         {rows.map((row, rowIndex) => (
+    <tr key={rowIndex}>
+      {row.map((country, colIndex) =>
+        country ? (
+          <td
+            style={{ backgroundColor: getRandomColor() }}
+            key={colIndex}
+          >
+            {country}
+          </td>
+        ) : null
+      )}
+    </tr>
+  ))}
       </tbody>
     </table>
   );

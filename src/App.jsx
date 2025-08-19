@@ -22,7 +22,7 @@ import QuestionAnalyticsUpdated2 from'./pages/QuestionAnalyticsUpdated2';
 
 
 import CountryAnalytics from './pages/CountryAnalytics';
-
+import CountryAnalyticsV2 from './pages/CountryAnalyticsv2';
 
 
 function App() {
@@ -30,7 +30,11 @@ function App() {
     <Router >
       <Routes>
         <Route path="/" element={<Questions />}  />
-        <Route path="/country-analytics" element={<CountryAnalytics />} />
+        <Route path="/country-analytics" element={<CountryAnalyticsV2 />} />
+        <Route path="/question-analytics" element={<QuestionAnalyticsUpdated2 />} />
+        {/* <Route path="/country-analytics" element={<CountryAnalytics />} />
+        <Route path="/country-analytics-v2" element={<CountryAnalyticsV2 />} />
+
         <Route path="/question-analytics" element={<QuestionAnalytics />} />
         <Route path="/question-analytics-v2" element={<QuestionAnalyticsUpdated />} />
         <Route path="/question-analytics-v3" element={<QuestionAnalyticsUpdated2 />} />
@@ -38,7 +42,7 @@ function App() {
 
         <Route path="/question-private" element={<QuestionsPrivate />} />
         <Route path="/question-private-analytics" element={<QuestionPrivateAnalytics />} />
-        <Route path="/question-private-analytics-V2" element={<QuestionPrivateAnalyticsV2 />} />
+        <Route path="/question-private-analytics-V2" element={<QuestionPrivateAnalyticsV2 />} /> */}
 
 
         
