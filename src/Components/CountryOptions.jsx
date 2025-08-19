@@ -24,32 +24,33 @@ const countries =options.slice(0,198);
     // return colors[Math.floor(Math.random() * colors.length)];
   };
   // Group countries into rows of 3
-  const rows = [];
-  for (let i = 0; i < countries.length; i += numberOfCol) {
-    rows.push(countries.slice(i, i + numberOfCol));
-  }
+ const numRows = Math.ceil(countries.length / numberOfCol);
+
+  // Create a matrix [rows][columns], filling column by column
+  const rows = Array.from({ length: numRows }, (_, rowIndex) =>
+    Array.from({ length: numberOfCol }, (_, colIndex) => {
+      const index = colIndex * numRows + rowIndex; // column-major order
+      return countries[index] || "";
+    })
+  );
 
   return (
     <table className="country-table">
       <tbody>
-        {rows.map((row, rowIndex) => (
-          <tr key={rowIndex}>
-            {row.map((country, colIndex) => {
-              // Calculate continuous index:
-              const index = offset + rowIndex * 3 + colIndex + 1;
-              return (
-                <td  style={{ backgroundColor: getRandomColor() }} key={colIndex}>
-                  {/* <span className="country-index">{index}.</span>  */}
-                  {country}
-                </td>
-              );
-            })}
-            {row.length < 3 &&
-              Array.from({ length: 3 - row.length }).map((_, i) => (
-                <td   key={`empty-${i}`} />
-              ))}
-          </tr>
-        ))}
+         {rows.map((row, rowIndex) => (
+    <tr key={rowIndex}>
+      {row.map((country, colIndex) =>
+        country ? (
+          <td
+            style={{ backgroundColor: getRandomColor() }}
+            key={colIndex}
+          >
+            {country}
+          </td>
+        ) : null
+      )}
+    </tr>
+  ))}
       </tbody>
     </table>
   );
