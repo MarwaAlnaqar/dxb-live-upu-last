@@ -127,9 +127,9 @@ const QuestionAnalyticsUpdated3 = () => {
            <div className='option-check-box'
            
            >
-             <OptionBox label="Yes" isWhite={true} count={60} />
-             <OptionBox label="No"isWhite={true} count={60} />
-             <OptionBox label="Abstain"isWhite={true} count={60} />
+             <OptionBox label="Yes / Oui" isWhite={true} count={60} />
+             <OptionBox label="No / Non"isWhite={true} count={60} />
+             <OptionBox label="Abstain / Abstention"isWhite={true} count={60} />
 
            </div>
          

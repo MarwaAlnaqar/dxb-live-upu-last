@@ -93,7 +93,7 @@ const CountryAnalyticsV2 = () => {
         <div className='option-check-box'
         
         >
-          <OptionBox label="Present" isWhite={true} count={60} />
+          <OptionBox label="Present / Présent" isWhite={true} count={60} />
           {/* <OptionBox label="Not Present"isWhite={true} count={60} /> */}
         </div>
       
