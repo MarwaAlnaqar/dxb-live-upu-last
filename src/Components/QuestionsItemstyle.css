@@ -184,7 +184,7 @@ letter-spacing: 1px;
   margin: 0;
   color:#fff ;
   font-size:1.5rem;
-  letter-spacing:1
+  letter-spacing:1px
 
 }
 .option-box-count{
@@ -192,4 +192,5 @@ letter-spacing: 1px;
           padding: 12px 19px;
           font-weight: bold;
           color:#fff;font-size:1.5rem;
+            letter-spacing:1px
 }
