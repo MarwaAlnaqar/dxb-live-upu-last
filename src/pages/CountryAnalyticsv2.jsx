@@ -12,7 +12,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 import { Navigation, Pagination } from 'swiper/modules';
-
+import countries from '../data/countries';
 const CHUNK_SIZE = 100;
 const option_a = `${import.meta.env.BASE_URL}/assets/upu/option_a.svg`;
 const option_b = `${import.meta.env.BASE_URL}/assets/upu/option_b.svg`;
@@ -36,8 +36,8 @@ const CountryAnalyticsV2 = () => {
   useEffect(() => {
     const loadCountries = async () => {
       try {
-        const result = await fetchAllCountries();
-
+        // const result = await fetchAllCountries();
+  const result = countries.map(country => country.Label);
         const chunks = [];
         for (let i = 0; i < result.length; i += CHUNK_SIZE) {
           chunks.push(result.slice(i, i + CHUNK_SIZE));

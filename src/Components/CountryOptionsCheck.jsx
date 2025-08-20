@@ -5,7 +5,7 @@ export default function CountryOptions({
   options = [],
   isSliced = true,
   offset = 0,
-  numberOfCol = 6,
+  numberOfCol = 5,
   isSlider = false
 }) {
 

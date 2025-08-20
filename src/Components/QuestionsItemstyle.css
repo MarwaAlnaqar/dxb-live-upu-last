@@ -150,6 +150,8 @@ text-align: center;
 }
 
 .country-table td {
+width: 200px;
+    max-width: 200px;
        font-family: 'Averta', sans-serif;
     text-align: start;
   padding: 5px 6px;

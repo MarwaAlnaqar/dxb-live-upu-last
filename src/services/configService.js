@@ -11,10 +11,12 @@ export const ELECTION_BUDDY_CONFIG = {
 
 
 export const apiClient = axios.create({
-  baseURL: "https://secure.electionbuddy.com/integrations/v2",
+  baseURL:"http://localhost:4000/api/votes",
   headers: {
-    "Authorization": `Bearer ${ELECTION_BUDDY_CONFIG.authorization}`,
-    "Content-Type": "application/json"
+    // "Authorization": `Bearer ${ELECTION_BUDDY_CONFIG.authorization}`,
+    // "Authorization":  ELECTION_BUDDY_CONFIG.authorization,
+
+    "Content-Type": "application/json",
   }
 });
 
